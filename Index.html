@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CampusHub — Discover What's Happening</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+
+    <a href="#" class="logo">
+      <span class="logo-icon">C</span>
+      CampusHub
+    </a>
+
+    <nav class="nav-links">
+      <a href="#">Explore</a>
+      <a href="#">Colleges</a>
+      <a href="#">About</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="host-btn">Host an Event</button>
+      <a href="#" class="signin">Sign in</a>
+    </div>
+
+  </header>
+
+
+  <!-- Hero -->
+  <main>
+
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <h1>
+          Discover what's happening
+          <br>
+          across <span>Mumbai.</span>
+        </h1>
+
+        <p>
+          Find your next workshop, competition, hackathon
+          or something worth showing up for.
+        </p>
+
+        <!-- Search -->
+        <div class="search-box">
+
+          <span class="search-icon">⌕</span>
+
+          <input type="text" placeholder="Search events, colleges, topics...">
+
+        </div>
+
+        <!-- Quick filters -->
+        <div class="quick-filters">
+
+          <button>This Week</button>
+          <button>Near Me</button>
+          <button>Free Events</button>
+
+        </div>
+
+      </div>
+
+    </section>
+    <section class="events-section">
+
+      <div class="section-heading">
+
+        <div>
+          <h2>What's happening?</h2>
+
+          <p>
+            Events worth checking out this week.
+          </p>
+        </div>
+
+        <a href="#" class="view-all">
+          View all →
+        </a>
+
+      </div>
+
+
+      <!-- Categories -->
+
+      <div class="categories">
+
+        <button class="category active">All</button>
+        <button class="category">Hackathons</button>
+        <button class="category">Workshops</button>
+        <button class="category">Competitions</button>
+        <button class="category">Tech</button>
+        <button class="category">Design</button>
+        <button class="category">Entrepreneurship</button>
+
+      </div>
+
+
+      <!-- Event Cards -->
+
+      <div class="event-grid">
+
+        <!-- Card 1 -->
+
+        <article class="event-card" data-category="Hackathons">
+
+          <div class="event-image">
+            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80"
+              alt="Students collaborating at an event">
+          </div>
+
+          <div class="event-content">
+
+            <span class="event-category">
+              HACKATHON
+            </span>
+
+            <h3>CodeSprint</h3>
+
+            <p class="college">
+              DJSCE
+            </p>
+
+            <div class="event-info">
+              <span>📅 Aug 28</span>
+              <span>📍 Vile Parle</span>
+            </div>
+
+            <div class="event-bottom">
+
+              <span class="price free">
+                Free
+              </span>
+
+              <a class="view-event" href="#">
+                View event
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- Card 2 -->
+
+        <article class="event-card" data-category="Workshops">
+
+          <div class="event-image">
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
+              alt="Workshop presentation">
+          </div>
+
+          <div class="event-content">
+
+            <span class="event-category">
+              WORKSHOP
+            </span>
+
+            <h3>AI Workshop</h3>
+
+            <p class="college">
+              VJTI
+            </p>
+
+            <div class="event-info">
+              <span>📅 Aug 30</span>
+              <span>📍 Matunga</span>
+            </div>
+
+            <div class="event-bottom">
+
+              <span class="price paid">
+                ₹99
+              </span>
+
+              <a class="view-event" href="#">
+                View event
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- Card 3 -->
+
+        <article class="event-card" data-category="Design">
+
+          <div class="event-image">
+            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80"
+              alt="Students working together">
+          </div>
+
+          <div class="event-content">
+
+            <span class="event-category">
+              DESIGN
+            </span>
+
+            <h3>Design Jam</h3>
+
+            <p class="college">
+              SPIT
+            </p>
+
+            <div class="event-info">
+              <span>📅 Sep 2</span>
+              <span>📍 Andheri</span>
+            </div>
+
+            <div class="event-bottom">
+
+              <span class="price free">
+                Free
+              </span>
+
+              <a class="view-event" href="https://youtube.com">
+                View event
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+        <!-- Card 4 -->
+
+    <article class="event-card" data-category="Competitions">
+
+      <div class="event-image">
+        <img
+          src="https://img.freepik.com/premium-photo/group-young-boys-enthusiastically-collaborating-construction-robot-students-working-building-robot-stem-lab-ai-generated_538213-17193.jpg"
+          alt="Robot">
+      </div>
+
+      <div class="event-content">
+
+        <span class="event-category">
+          Workshop
+        </span>
+
+        <h3><h3>Mumbai Inter College Robotics Competition</h3></h3>
+
+        <p class="college">
+          TSEC
+        </p>
+
+        <div class="event-info">
+          <span>Aug 2</span>
+          <span>Kandivali</span>
+        </div>
+
+        <div class="event-bottom">
+
+          <span class="price paid">
+            $2
+          </span>
+
+          <a class="view-event" href="https://youtube.com">
+            View event
+          </a>
+
+        </div>
+
+      </div>
+
+    </article>
+      </div>
+    </section>
+    </div>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

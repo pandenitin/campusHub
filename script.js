@@ -1,14 +1,50 @@
+const sectionTitle= document.querySelector(".section-heading");
+const categories=document.querySelectorAll(".category");
+const eventCards=document.querySelectorAll(".event-card");
+const searchInput=document.querySelector(".search-box input");
+let selectedCategory = "All";
+for(let category of categories){
 
-class user{
-  constructor(name,email){
-    this.name=name;
-    this.email=email;
-  }
-  viewData()
-  {
-    console.log("website data");
-  }
+    category.addEventListener("click",()=>{
+
+        selectedCategory = category.textContent;
+
+        filterEvents();
+
+    });
 }
-let student1=new user("nitin","pandenitin586@gmail.com");
-let student2 =new user("sujit","sujitbhadva@gmail.com");
-let student3 =new user("krish","krishmadar@gmail.com");
+searchInput.addEventListener("input", () => {
+
+    filterEvents();
+
+});
+function filterEvents() {
+
+    const searchText = searchInput.value.toLowerCase();
+
+    for(let card of eventCards) {
+
+        const cardText = card.textContent.toLowerCase();
+        const cardCategory = card.dataset.category;
+
+        const categoryMatch =
+            selectedCategory === "All" ||
+            selectedCategory === cardCategory;
+
+        const searchMatch =
+            cardText.includes(searchText);
+
+        if(categoryMatch && searchMatch) {
+
+            card.classList.remove("hidden");
+
+        }
+        else {
+
+            card.classList.add("hidden");
+
+        }
+    }
+} 
+
+
