@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign In | CampusHub</title>
+
+    <link rel="stylesheet" href="signin.css">
+</head>
+
+<body>
+
+    <main class="signin-page">
+
+        <div class="signin-container">
+
+            <a href="index.html" class="signin-logo">
+                <span class="logo-icon">C</span>
+                <span>CampusHub</span>
+            </a>
+
+            <div class="signin-header">
+                <h1>Welcome back</h1>
+
+                <p>
+                    Sign in to continue exploring CampusHub.
+                </p>
+            </div>
+
+            <form class="signin-form" id="signin-form" novalidate>
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                    >
+
+                    <p class="error-message" id="email-error"></p>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="password-wrapper">
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="password-toggle"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+                    <p class="error-message" id="password-error"></p>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="signin-button"
+                >
+                    Sign In
+                </button>
+
+                <p
+                    class="success-message"
+                    id="success-message"
+                ></p>
+
+            </form>
+
+
+            <p class="signup-text">
+
+                Don't have an account?
+
+                <a href="signup.html">
+                    Sign up
+                </a>
+
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <script src="signin.js"></script>
+
+</body>
+
+</html>
